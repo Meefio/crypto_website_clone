@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFD na kryptowaluty | FXCM PL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/532fae2fe3.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/dist/css/hamburgers.min.css">
+<link rel="stylesheet" href="/dist/css/main.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper-nav">
+    <div class="banner">
+        <p class="banner__text">Kontrakty CFD są złożonymi instrumentami i wiążą się z dużym ryzykiem szybkiej utraty
+            środków pieniężnych z powodu dźwigni finansowej. <strong>75% rachunków inwestorów detalicznych odnotowuje
+                straty
+                pieniężne w wyniku handlu kontraktami CFD u niniejszego dostawcy CFD. </strong> Zastanów się, czy
+            rozumiesz,
+            jak działają kontrakty CFD i czy możesz pozwolić sobie na wysokie ryzyko utraty pieniędzy.</p>
+    </div>
+    <div class="banner__btn show"><i class="fa-solid fa-chevron-down "></i></div>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__elements">
+                <div class="header__left-elements">
+                    <a href="#"><img src="https://assets.fxcm.com/fxpress/fxcmcom/base/assets/logos/logo-blue-en.svg"
+                        class="header__logo" alt="Forex Capital Markets" loading="lazy"></a>
+                    <ul class="desktop-menu">
+                        <li class="desktop-menu__li-item"><a class="desktop-menu__link" href="#">Handel</a></li>
+                        <li class="desktop-menu__li-item"><a class="desktop-menu__link" href="#">Rynki</a></li>
+                        <li class="desktop-menu__li-item"><a class="desktop-menu__link" href="#">Wiedza</a></li>
+                        <li class="desktop-menu__li-item"><a class="desktop-menu__link" href="#">Insights</a></li>
+                        <li class="desktop-menu__li-item"><a class="desktop-menu__link" href="#">O FXCM</a></li>
+                    </ul>
+                </div>
+                <div class="header__right-elements">
+                    <button class="button__main-cta">otwórz konto</button>
+                    <button class="hamburger hamburger--squeeze" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <aside class="side-menu">
+        <div class="side-menu__search">
+            <form class="side-menu__form" action="">
+                <input type="text" class="side-menu__input" placeholder="Szukaj www.fxcm.com/pl...">
+                <button class="side-menu__search-button"><svg width="16" height="17" viewBox="0 0 24 25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 4px;">
+                        <path
+                            d="m23.813 22.594-6.047-6.047a.532.532 0 0 0-.375-.14h-.516c1.64-1.782 2.625-4.079 2.625-6.657C19.5 4.406 15.094 0 9.75 0 4.36 0 0 4.406 0 9.75c0 5.39 4.36 9.75 9.75 9.75a9.786 9.786 0 0 0 6.61-2.578v.469c0 .187.046.328.14.422l6.047 6.046a.54.54 0 0 0 .797 0l.468-.468a.54.54 0 0 0 0-.797zM9.75 18A8.203 8.203 0 0 1 1.5 9.75 8.232 8.232 0 0 1 9.75 1.5C14.297 1.5 18 5.203 18 9.75A8.232 8.232 0 0 1 9.75 18z"
+                            fill="#283545"></path>
+                    </svg></button>
+            </form>
+        </div>
+        <div class="side-menu__main-menu">
+            <ul>
+                <li class="side-menu__li-item"><a href="#" class="side-menu__link">Handel</a></li>
+                <li class="side-menu__li-item"><a href="#" class="side-menu__link">Rynki</a></li>
+                <li class="side-menu__li-item"><a href="#" class="side-menu__link">Wiedza</a></li>
+                <li class="side-menu__li-item"><a href="#" class="side-menu__link">Insights</a></li>
+                <li class="side-menu__li-item"><a href="#" class="side-menu__link">O FXCM</a></li>
+                <li class="side-menu__li-item"><a href="#" class="side-menu__link">Kontakt</a></li>
+                <li class="side-menu__li-item"><a href="#" class="side-menu__link">Zaloguj się</a></li>
+            </ul>
+        </div>
+        <div class="side-menu__secondary-menu">
+            <hr>
+            <ul>
+                <li class="side-menu__li-item"><a href=""
+                        class="ide-menu__link side-menu__link side-menu__link--secondary">Wsparcie</a></li>
+                <li class="side-menu__li-item"><a href=""
+                        class="ide-menu__link side-menu__link side-menu__link--secondary">Wypróbuj demo</a></li>
+            </ul>
+        </div>
+    </aside>
+</div>
+
+
+
+    <main>
+        <div class="banner-paypal">
+            <div class="wrapper">
+                <h3 class="banner-paypal__text paypal-show">PayPal jest teraz dostępny do wpłat</h3>
+                <div class="banner-paypal__expanded">
+                    <img src="https://assets.fxcm.com/cdn-cgi/image/quality=100,format=webp/fxpress/fxcmcom/base/page/deposit-funds/paypal-deposit-strip.png"
+                        class="banner-paypal__img" alt="logo PayPal na telefonie" loading="lazy">
+                    <div class="banner-paypal__text-box">
+                        <h2 class="banner-paypal__title">PayPal jest teraz dostępny do wpłat</h2>
+                        <p class="banner-paypal__description">Odkryj naszą nową metodę wpłat i sfinansuj swoje konto za
+                            pomocą PayPal bez ograniczeń w płatnościach.</p>
+                        <button class="banner-paypal__cta">dowiedz się więcej</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="banner-paypal__btn"><i class="fa-solid fa-chevron-down banner-paypal__icon"></i></button>
+
+        <section class="main-section wrapper">
+            <div class="main-section__left-box">
+                <h1 class="main-section__title">Nowe niższe spready - Do 54%* mniej kosztów transakcyjnych.</h1>
+                <h2 class="main-section__description">handluj łatwo dzięki aplikacji mobilnej fxcm</h2>
+                <div class="main-section__btns-box">
+                    <button class="button__main-cta main-section__btn">otwórz konto live</button>
+                    <button class="button__main-cta main-section__btn main-section__btn--darken">konto demo</button>
+                </div>
+            </div>
+            <img src="https://assets.fxcm.com/cdn-cgi/image/quality=100,format=webp/fxpress/fxcmcom/base/journey/zero-commission-two-phones-award.png"
+                class="main-section__img" alt="Telefon z odpaloną aplikacją giełdową i aktualnymi kursami">
+            <a href="#stock">
+                <div class="main-section__arrow-down">
+                    <i class="fa-solid fa-chevron-down main-section__icon"></i>
+                </div>
+            </a>
+        </section>
+        <section class="cards wrapper">
+            <div class="cards__card-box">
+                <div class="cards__card">
+                    <h3 class="cards__title">Trading Station</h3>
+                    <div class="cards__body">
+                        <i class="fa-solid fa-desktop cards__icon"></i>
+                        <div class="cards__text-box">
+                            <p class="cards__text">Poznaj naszą autorską platformę do handlu Forex i CDF na Maca,
+                                Androida i iOS.</p>
+                            <p class="cards__more"><a href="#" class="cards__link">Dowiedz się więcej</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__card">
+                    <h3 class="cards__title">Bezpłatne konto treningowe</h3>
+                    <div class="cards__body">
+                        <i class="fa-solid fa-chart-column cards__icon"></i>
+
+                        <div class="cards__text-box">
+                            <p class="cards__text">Ćwicz handel na rynku Forex, Bitcoinem, złotem i kontraktami CFD bez
+                                ryzyka na koncie treningowym z 50 000 w wirtualnych środkach.</p>
+                            <p class="cards__more"><a href="#" class="cards__link">Dowiedz się więcej</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__card">
+                    <h3 class="cards__title">TradingView</h3>
+                    <div class="cards__body">
+                        <i class="fa-solid fa-plane-departure cards__icon"></i>
+                        <div class="cards__text-box">
+                            <p class="cards__text">Integracja TradingView z handlem na żywo jest dostępna w FXCM.
+                                Handluj bezpośrednio z Twoich wykresów TradingView.</p>
+                            <p class="cards__more"><a href="#" class="cards__link">Dowiedz się więcej</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="cards__disclaimer">*
+                Niższe spready dostępne tylko dla określonych produktów. Porównanie oparte jest na średnich spreadach
+                Grupy FXCM z okresu od 1 kwietnia 2022 do 30 czerwca 2022. Spready mogą się różnić. Wyniki z przeszłości
+                nie są wskaźnikiem przyszłych wyników.</p>
+        </section>
+        <section id="stock" class="stock wrapper">
+            <h2 class="stock__heading">pojedyńcze konto. wiele rynków.</h2>
+            <ul class="stock__nav">
+                <p class="stock__selected-li">Najpopularniejsze</p>
+                <i class="fa-solid fa-sort-down stock__arrow"></i>
+                <div class="stock__li-box">
+                    <li class="stock__li-item stock__active">Najpopularniejsze</li>
+                    <li class="stock__li-item">Forex</li>
+                    <li class="stock__li-item">Akcje</li>
+                    <li class="stock__li-item">Towary</li>
+                    <li class="stock__li-item">Indeksy</li>
+                    <li class="stock__li-item">Kryptowaluty</li>
+                </div>
+            </ul>
+            <div class="stock__box">
+                <div class="stock__card">
+                    <div class="stock__data">
+                        <div class="stock__data-heading">
+                            <p class="stock__pair">EUR/USD</p>
+                            <a class="stock__full-name" href="#">Euro / US Dollar</a>
+                        </div>
+                        <div class="stock__right-side">
+                            <a href="" class="stock__price">1.12338</a>
+                            <p class="stock__percent-change">0.06%</p>
+                        </div>
+                    </div>
+                    <div class="stock__bar">
+                        <i class="fa-solid fa-sort-down stock__progress-arrow"></i>
+                        <div class="stock__progress"></div>
+                    </div>
+                    <div class="stock__price-range">
+                        <p class="stock__min">0.95369</p>
+                        <p class="stock__max">1.12462</p>
+                    </div>
+                </div>
+                <div class="stock__card">
+                    <div class="stock__data">
+                        <div class="stock__data-heading">
+                            <p class="stock__pair">EUR/USD</p>
+                            <a class="stock__full-name" href="#">Euro / US Dollar</a>
+                        </div>
+                        <div class="stock__right-side">
+                            <a href="" class="stock__price">1.12338</a>
+                            <p class="stock__percent-change">0.06%</p>
+                        </div>
+                    </div>
+                    <div class="stock__bar">
+                        <i class="fa-solid fa-sort-down stock__progress-arrow"></i>
+                        <div class="stock__progress"></div>
+                    </div>
+                    <div class="stock__price-range">
+                        <p class="stock__min">0.95369</p>
+                        <p class="stock__max">1.12462</p>
+                    </div>
+                </div>
+                <div class="stock__card">
+                    <div class="stock__data">
+                        <div class="stock__data-heading">
+                            <p class="stock__pair">EUR/USD</p>
+                            <a class="stock__full-name" href="#">Euro / US Dollar</a>
+                        </div>
+                        <div class="stock__right-side">
+                            <a href="" class="stock__price">1.12338</a>
+                            <p class="stock__percent-change">0.06%</p>
+                        </div>
+                    </div>
+                    <div class="stock__bar">
+                        <i class="fa-solid fa-sort-down stock__progress-arrow"></i>
+                        <div class="stock__progress"></div>
+                    </div>
+                    <div class="stock__price-range">
+                        <p class="stock__min">0.95369</p>
+                        <p class="stock__max">1.12462</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="guide">
+            <div class="wrapper">
+                <div class="guide__box">
+                    <h2 class="guide__heading">twój przewodnik po rynku</h2>
+                    <p class="guide__description">CFD są złożonymi instrumentami, a handel nimi jest ryzykowny, dlatego
+                        chcemy wyposażyć naszych klientów w niezbędne narzędzia i wiedzę, aby mogli podejmować świadome
+                        decyzje inwestycyjne.
+                    </p>
+                    <div class="guide__card-box">
+                        <div class="guide__card">
+                            <i class="fa-solid fa-layer-group guide__icon"></i>
+                            <div>
+                                <h3 class="guide__card-title">Ekskluzywne narzędzia handlowe</h3>
+                                <p class="guide__card-description">Uzyskaj dostęp do potężnych narzędzi: dane o
+                                    wolumenie, <br>
+                                    nastroje inwestorów i inne.</p>
+                            </div>
+                        </div>
+                        <div class="guide__card">
+                            <i class="fa-solid fa-book-open guide__icon"></i>
+                            <div>
+                                <h3 class="guide__card-title">Przewodniki handlowe</h3>
+                                <p class="guide__card-description">Naucz się podstaw z <strong
+                                        class="guide__card-link">Nowy na Rynku Forex.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="discover wrapper">
+            <div class="discover__flex-left">
+                <h2 class="section-heading">odkryj 20 lat fxcm group</h2>
+                <p class="discover__text discover__text--bold">"W FXCM Group służymy naszym klientom już od ponad 20
+                    lat. W tym czasie świat handlu na rynku Forex bardzo się zmienił."</p>
+                <p class="discover__text">Obejrzyj nasz film, aby dowiedzieć się więcej o historii FXCM Group.</p>
+                <button class="button__main-cta discover__btn">dowiedz się więcej</button>
+            </div>
+            <div class="discover__flex-right">
+                <iframe class="discover__video" src="https://www.youtube.com/embed/5ktJpv8OOro"
+                    title="FXCM 20 Years of Trading" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <h3 class="discover__video-title">FXCM 20 years of trading</h3>
+                <p class="discover__date">07/11/2019</p>
+            </div>
+        </section>
+        <footer class="footer-sitemap">
+            <div class="wrapper">
+                <div class="footer-sitemap__box">
+                    <div class="footer-sitemap__block footer-sitemap__block--1">
+                        <h3 class="footer-sitemap__title">o fxcm</h3>
+                        <ul class="footer-sitemap__ul-list">
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">Globalny broker
+                                    Forex</a></li>
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">Międzynarodowe
+                                    biura/miejsca</a></li>
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">Press
+                                    Releases</a></li>
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">Centrum
+                                    Karier</a></li>
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">Fundusze
+                                    Klientów</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-sitemap__block footer-sitemap__block--2">
+                        <h3 class="footer-sitemap__title">popularne platformy</h3>
+                        <ul class="footer-sitemap__ul-list">
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">TradingView</a>
+                            </li>
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">Trading
+                                    Station</a></li>
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">MetaTrader 4</a>
+                            </li>
+                        </ul>
+                        <h3 class="footer-sitemap__title">Pobierz</h3>
+                        <ul class="footer-sitemap__ul-list">
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">Pobierz Trading
+                                    Station</a></li>
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">Pobierz
+                                    Mobile</a></li>
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">Pobierz
+                                    MetaTrader 4</a></li>
+                        </ul>
+                        <h3 class="footer-sitemap__title">Uruchom oprogramowanie</h3>
+                        <ul class="footer-sitemap__ul-list">
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">Trading Station
+                                    Web</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-sitemap__block footer-sitemap__block--3">
+                        <h3 class="footer-sitemap__title">konta</h3>
+                        <ul class="footer-sitemap__ul-list">
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">Forex Trading
+                                    Demo</a></li>
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">Open an
+                                    Account</a></li>
+                        </ul>
+                        <h3 class="footer-sitemap__title">więcej zasobów</h3>
+                        <ul class="footer-sitemap__ul-list">
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">Insights</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-sitemap__block footer-sitemap__block--4">
+                        <h3 class="footer-sitemap__title">Obsługa klienta</h3>
+                        <ul class="footer-sitemap__ul-list">
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">Czat z
+                                    specjalistą 24/5</a></li>
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">Wsparcie</a>
+                            </li>
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">Usługi
+                                    instytucjonalne</a></li>
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">Zarządzaj
+                                    kontem/depozytem</a></li>
+                        </ul>
+                        <h3 class="footer-sitemap__title">fxcm policies</h3>
+                        <ul class="footer-sitemap__ul-list">
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">Polityka cookies
+                                    & ustawienia</a></li>
+                            <li class="footer-sitemap__li-item"><a class="footer-sitemap__link" href="">Polityka
+                                    prywatności</a></li>
+                        </ul>
+                        <h3 class="footer-sitemap__title">śledź nas</h3>
+                        <ul class="footer-sitemap__ul-list footer-sitemap__icons">
+                            <li class="footer-sitemap__li-item--icon"><a class="footer-sitemap__link--icon" href=""><i
+                                        class="fa-brands fa-youtube footer-sitemap__icon footer-sitemap__youtube"></i></a>
+                            </li>
+                            <li class="footer-sitemap__li-item--icon"><a class="footer-sitemap__link--icon" href=""><i
+                                        class="fa-solid fa-rss footer-sitemap__icon footer-sitemap__rss"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </main>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="/dist/js/main.min.js"></script>
+</body>
+
+</html>
